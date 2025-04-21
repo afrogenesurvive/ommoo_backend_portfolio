@@ -1,0 +1,39 @@
+
+ALTER TABLE `event`
+ADD COLUMN `private` BOOLEAN NOT NULL;
+
+ALTER TABLE `like`
+ADD COLUMN `private` BOOLEAN NOT NULL;
+
+ALTER TABLE `production_company_user`
+ADD COLUMN `private` BOOLEAN NOT NULL;
+
+ALTER TABLE `production_company`
+ADD COLUMN `private` BOOLEAN NOT NULL;
+
+ALTER TABLE `rating`
+ADD COLUMN `private` BOOLEAN NOT NULL;
+
+ALTER TABLE `review`
+ADD COLUMN `private` BOOLEAN NOT NULL;
+
+ALTER TABLE `show`
+ADD COLUMN `private` BOOLEAN NOT NULL;
+
+ALTER TABLE `tag`
+ADD COLUMN `private` BOOLEAN NOT NULL;
+
+ALTER TABLE `user`
+ADD COLUMN `private` BOOLEAN NOT NULL;
+
+ALTER TABLE `venue`
+ADD COLUMN `private` BOOLEAN NOT NULL;
+
+ALTER TABLE `watchlist_item`
+ADD COLUMN `private` BOOLEAN NOT NULL;
+
+ALTER TABLE `watchlist`
+ADD COLUMN `private` BOOLEAN NOT NULL;
+
+ALTER TABLE `contact`
+ADD COLUMN `private` BOOLEAN NOT NULL;

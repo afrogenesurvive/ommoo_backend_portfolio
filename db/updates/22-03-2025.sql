@@ -1,0 +1,2 @@
+ALTER TABLE `show`
+ADD COLUMN `average_rating` INTEGER NOT NULL DEFAULT 0,

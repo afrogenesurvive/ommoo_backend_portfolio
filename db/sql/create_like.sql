@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS `like` (
+  `id` VARCHAR(45) NOT NULL,
+  `entity_type` ENUM('USER','PRODUCTION_COMPANY','PRODUCTION_COMPANY_USER','VENUE','SHOW','EVENT','REVIEW','WATCHLIST') NOT NULL,
+  `entity_id` VARCHAR(45) NOT NULL,
+  `value` VARCHAR(1) NOT NULL,
+  `private` BOOLEAN NOT NULL,
+  `create_time` DATETIME NOT NULL,
+  `update_time` DATETIME,
+  `created_by` VARCHAR(45) NOT NULL,
+  `updated_by` VARCHAR(45),
+  `is_deleted` VARCHAR(1) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

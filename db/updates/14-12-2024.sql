@@ -1,0 +1,5 @@
+ALTER TABLE `tag`
+DROP COLUMN `name`;
+
+ALTER TABLE `tag`
+ADD COLUMN `tag` TEXT NOT NULL;

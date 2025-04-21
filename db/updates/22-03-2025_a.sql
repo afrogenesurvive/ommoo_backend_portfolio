@@ -1,0 +1,2 @@
+ALTER TABLE `show`
+MODIFY COLUMN `average_rating` FLOAT NOT NULL DEFAULT 0;

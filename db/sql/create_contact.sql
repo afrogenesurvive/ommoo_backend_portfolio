@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS `contact` (
+  `id` VARCHAR(45) NOT NULL,
+  `entity_type` ENUM('USER','PRODUCTION_COMPANY','VENUE','SHOW','EVENT') NOT NULL,
+  `entity_id` VARCHAR(45) NOT NULL,
+  `primary` BOOLEAN,
+  `phone` VARCHAR(255),
+  `phone2` VARCHAR(255),
+  `email` VARCHAR(255),
+  `address` TEXT,
+  `address2` TEXT,
+  `state` VARCHAR(255),
+  `city` VARCHAR(255),
+  `country` VARCHAR(255),
+  `postal_code` VARCHAR(255),
+  `private` BOOLEAN NOT NULL,
+  `create_time` DATETIME NOT NULL,
+  `update_time` DATETIME,
+  `created_by` VARCHAR(45) NOT NULL,
+  `updated_by` VARCHAR(45),
+  `is_deleted` varchar(1) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

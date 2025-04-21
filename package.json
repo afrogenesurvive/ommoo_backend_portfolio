@@ -1,0 +1,63 @@
+{
+  "name": "oommoo_website",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "migrate": "npx sequelize-cli db:migrate",
+    "migrateprod": "npx sequelize-cli db:migrate:status --config db/config/config.js",
+    "seed": "npx sequelize-cli db:seed:all",
+    "setup-db": "npm run migrate && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OommoO-Lula/oommoo_website.git"
+  },
+  "keywords": [],
+  "author": "Michael Grandison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OommoO-Lula/oommoo_website/issues"
+  },
+  "homepage": "https://github.com/OommoO-Lula/oommoo_website#readme",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.735.0",
+    "@aws-sdk/credential-providers": "^3.734.0",
+    "@aws-sdk/s3-request-presigner": "^3.735.0",
+    "@aws-sdk/token-providers": "^3.734.0",
+    "@aws-sdk/util-format-url": "^3.734.0",
+    "@graphql-tools/merge": "^9.0.7",
+    "@graphql-tools/schema": "^10.0.6",
+    "@sendgrid/mail": "^8.1.4",
+    "@smithy/hash-node": "^4.0.1",
+    "@smithy/protocol-http": "^5.0.1",
+    "@smithy/url-parser": "^4.0.1",
+    "axios": "^1.8.3",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-oauth2-jwt-bearer": "^1.6.0",
+    "express-openid-connect": "^2.17.1",
+    "google-auth-library": "^9.14.2",
+    "graphql": "^16.9.0",
+    "graphql-http": "^1.22.1",
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.1.0",
+    "moment": "^2.30.1",
+    "mysql2": "^3.11.0",
+    "openid-client": "^6.3.3",
+    "path": "^0.12.7",
+    "pg": "^8.12.0",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2",
+    "string-crypto": "^3.0.2",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
